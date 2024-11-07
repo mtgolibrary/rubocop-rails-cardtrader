@@ -89,6 +89,9 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Max: 25
 
+Minitest/MultipleAssertions:
+  Enabled: false
+
 Naming/VariableNumber:
   Enabled: false
 
