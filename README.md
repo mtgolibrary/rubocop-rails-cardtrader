@@ -7,7 +7,7 @@ Rubocop cops used in CardTrader.
 First add this to your Gemfile:
 
 ```ruby
-gem "rubocop-rails-cardtrader", require: false, group: [ :development ]
+gem "rubocop-rails-cardtrader", require: false, group: [:development], github: 'mtgolibrary/rubocop-rails-cardtrader'
 ```
 
 Then run `bundle`, then `bundle binstubs rubocop`.
