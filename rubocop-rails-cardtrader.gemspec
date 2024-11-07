@@ -11,8 +11,10 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
 
   s.add_dependency 'rubocop'
-  s.add_dependency 'rubocop-rails'
+  s.add_dependency 'rubocop-capybara'
+  s.add_dependency 'rubocop-minitest'
   s.add_dependency 'rubocop-performance'
+  s.add_dependency 'rubocop-rails'
 
   s.files = %w[rubocop.yml]
 end
