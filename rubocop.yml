@@ -1,9 +1,11 @@
 require:
+  - ./lib/cops/errors_cop.rb
+
+plugins:
   - rubocop-capybara
   - rubocop-minitest
   - rubocop-performance
   - rubocop-rails
-  - ./lib/cops/errors_cop.rb
 
 AllCops:
   NewCops: enable
