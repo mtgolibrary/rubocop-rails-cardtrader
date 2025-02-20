@@ -1,8 +1,8 @@
 require:
+  - rubocop-capybara
   - ./lib/cops/errors_cop.rb
 
 plugins:
-  - rubocop-capybara
   - rubocop-minitest
   - rubocop-performance
   - rubocop-rails
