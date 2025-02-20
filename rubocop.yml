@@ -97,6 +97,9 @@ Performance/Casecmp:
 Rails:
   Enabled: true
 
+Rails/Delegate:
+  Enabled: false
+
 Rails/HasAndBelongsToMany:
   Enabled: false
 
