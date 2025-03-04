@@ -97,6 +97,10 @@ Performance/Casecmp:
 Rails:
   Enabled: true
 
+Rails/FindEach:
+  AllowedMethods:
+    - all
+
 Rails/HasAndBelongsToMany:
   Enabled: false
 
