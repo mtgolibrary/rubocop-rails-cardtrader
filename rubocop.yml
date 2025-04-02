@@ -88,6 +88,10 @@ Metrics/PerceivedComplexity:
 Minitest/MultipleAssertions:
   Enabled: false
 
+Naming/PredicateName:
+  Exclude:
+    - **/concerns/**/*.rb
+
 Naming/VariableNumber:
   Enabled: false
 
