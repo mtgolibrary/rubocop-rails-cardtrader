@@ -90,7 +90,7 @@ Minitest/MultipleAssertions:
 
 Naming/PredicateName:
   Exclude:
-    - **/concerns/**/*.rb
+    - '**/concerns/**/*.rb'
 
 Naming/VariableNumber:
   Enabled: false
