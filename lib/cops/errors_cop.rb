@@ -44,7 +44,7 @@ module Cops
           end
 
           # Check that super is called after all instance variables are assigned
-          if super_call?(child)
+          if child.super_type?
             unassigned_vars = args.map { |arg| :"@#{arg.children.first}" } - [:@message] - assigned_instance_vars
             unless unassigned_vars.empty?
               add_offense(child, message: 'super should be called after all instance variables are assigned.')
@@ -63,13 +63,9 @@ module Cops
         end
 
         # Check for any call to super, regardless of arguments
-        unless children.any? { |child| super_call?(child) }
+        unless children.any?(&:super_type?)
           add_offense(node, message: 'Missing super call.')
         end
-      end
-
-      def super_call?(node)
-        node.keyword? && node.method?(:super)
       end
 
       def check_attr_readers(body, initialize_method_node)
