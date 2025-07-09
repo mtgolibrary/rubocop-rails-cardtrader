@@ -88,6 +88,9 @@ Metrics/PerceivedComplexity:
 Minitest/MultipleAssertions:
   Enabled: false
 
+Naming/PredicateMethod:
+  Enabled: false
+
 Naming/PredicatePrefix:
   Exclude:
     - '**/concerns/**/*.rb'
